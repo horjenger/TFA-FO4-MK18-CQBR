@@ -1,7 +1,7 @@
 ![alt text](https://i.imgur.com/BKIRNkt.png) 
 
 # [TFA][AT][F04] MK18 CQBR
-Glock19X from Fallout 4 mod on TFA Base
+FULLY WIP!!!
 
 ## Requestments:
 * TFA Base
