@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\fo4\mk18\grips\PistolGrip_FAB_D"
+	"$bumpmap" "models\weapons\fo4\mk18\grips\PistolGrip_FAB_N"
+	"$phongexponenttexture" "models\weapons\fo4\mk18\grips\PistolGrip_FAB_S"
+	"$lightwarptexture" "models\weapons\fo4\mk18\lightwarp_leather"
+	"$phong"		"1"
+	"$blendtintbybasealpha" "1"
+	"$phongboost"	"10"
+	"$phongalbedotint"		"1"
+	"$phongfresnelranges"	"[0.6 0.7 2]"
+	"$rimlight"	"1"
+	"$rimlightexponent"		"25"
+	"$rimmask"	"1"
+	"$rimlightboost"	"4"
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"[ 0.03 0.03 0.03]"
+}
+
+
+
+
+
+
