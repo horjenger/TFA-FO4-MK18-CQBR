@@ -14,7 +14,7 @@ SWEP.SlotPos				= 77			-- Position in the slot
 SWEP.AutoSwitchTo			= false		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.Weight				= 25			-- This controls how "good" the weapon is for autopickup.
-SWEP.Type	= "PDW"
+SWEP.Type	= "Rifle"
 	
 --[[WEAPON HANDLING]]--
 SWEP.Primary.LoopSound = Sound("TFA_FO4_MK18.Fire_Loop") -- Looped fire sound, unsilenced
@@ -161,8 +161,8 @@ SWEP.SafetyAng = Vector(-12, 54, -12)
 SWEP.data = {}
 SWEP.data.ironsights = 1 --Enable Ironsights
 SWEP.Secondary.IronFOV = 85 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
-SWEP.IronSightsPos = Vector(-0.026, -1, -0.55)
-SWEP.IronSightsAng = Vector(0, 0.024, 0)
+SWEP.IronSightsPos = Vector(-0.026, -1, -0.65)
+SWEP.IronSightsAng = Vector(0.4, 0.024, 0)
 --[[INSPECTION]]--
 SWEP.InspectPos = Vector(12.406, -9, 2.358)
 SWEP.InspectAng = Vector(36.34, 56.686, 39.937)
