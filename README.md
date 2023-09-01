@@ -9,7 +9,7 @@ FULLY WIP!!!
 * TFA Insurgency: Shared Parts
 
 ## Notes:
-* ***Uncompressed bumpmaps***
+* ***Uncompressed textures***
 * ***There may be extra files I forgot to delete***
 
 ## IMPORTANT FOR UPDATES
