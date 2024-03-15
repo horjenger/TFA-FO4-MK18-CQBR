@@ -86,7 +86,7 @@ SWEP.ProjectileEntity = nil --Entity to shoot
 SWEP.ProjectileVelocity = 0 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 --[[VIEWMODEL]]--
-SWEP.ViewModel			= "models/weapons/test_mk18_v01.mdl" --Viewmodel path
+SWEP.ViewModel			= "models/weapons/test_mk18_v02.mdl" --Viewmodel path
 SWEP.ViewModelFOV			= 65		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.SprintFOVOffset = 0
@@ -100,7 +100,7 @@ SWEP.CenteredAng = nil --The viewmodel angular offset, used for centering.  Leav
 SWEP.Bodygroups_V = {
 	[0] = 1,
 	[1] = 1,
-	[2] = 1,
+	[2] = 2,
 	[3] = 1,
 	[4] = 1,
 	[5] = 1,
@@ -279,7 +279,7 @@ SWEP.AnimCycle = 0 -- Start on the right
 --[[ATTACHMENTS]]--
 
 SWEP.Attachments = {
-
+	[1] = { atts = { "fo4_mk_holosun", } },
 }
 
 SWEP.AttachmentExclusions   = {
@@ -294,7 +294,57 @@ SWEP.WorldModelBoneMods = {
 
 }
 
+function FO4DrawSingleReticle()
+	if TFA.INS2 and TFA.INS2.DrawHoloSight then
+		local drawFunc = TFA.INS2.DrawHoloSight
+
+		return function(wep, p, a, s)
+			local reticle = wep:GetStat("Reticle", {})
+			if not reticle then return end
+
+			local activeelem = wep:GetStat("ScopeVElement")
+			if not activeelem then return end
+
+			local result = reticle
+			if not result then return end
+
+			drawFunc(wep, result, activeelem, p, a, s)
+		end
+	end
+
+	return nil
+end
+
+SWEP.SightOffset_Nil = Vector(0, 0, 0)
+SWEP.SightOffset_HOLOSUN = SWEP.SightOffset_Nil + Vector(-0.02, -2.5, -0.03)
+
 SWEP.VElements = {
+	["sight_holosun"] = {
+		type = "Model",
+		model = "models/weapons/c_fo4_mk18_holosun.mdl",
+		bone = "Weapon",
+		rel = "",
+		pos = Vector(0, 0, 0),
+		angle = Angle(0, 0, 0),
+		size = Vector(1, 1, 1),
+		color = Color(255, 255, 255, 255),
+		surpresslightning = false,
+		material = "",
+		skin = 0,
+		bodygroup = {},
+		active = false,
+		bonemerge = true
+	},
+	["sight_holosun_lens"] = {
+		type = "Quad",
+		rel = "sight_holosun",
+		bone = "A_RenderReticle",
+		pos = Vector(0, -3, 0),
+		angle = Angle(0, 0, 90),
+		size = 0.3,
+		draw_func_outer = FO4DrawSingleReticle(),
+		active = false
+	},
 }
 
 SWEP.WElements = {
