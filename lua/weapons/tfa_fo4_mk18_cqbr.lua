@@ -86,7 +86,7 @@ SWEP.ProjectileEntity = nil --Entity to shoot
 SWEP.ProjectileVelocity = 0 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 --[[VIEWMODEL]]--
-SWEP.ViewModel			= "models/weapons/fo4/c_fo4_mk18cqbr.mdl" --Viewmodel path
+SWEP.ViewModel			= "models/weapons/test_mk18_v01.mdl" --Viewmodel path
 SWEP.ViewModelFOV			= 65		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.SprintFOVOffset = 0
@@ -262,7 +262,7 @@ SWEP.SmokeParticle = nil --Smoke particle (ID within the PCF), defaults to somet
 SWEP.LuaShellEject = true --Enable shell ejection through lua?
 SWEP.LuaShellEjectDelay = 0 --The delay to actually eject things
 SWEP.LuaShellEffect = nil --The effect used for shell ejection; Defaults to that used for blowback
-SWEP.LuaShellModel  = "models/weapons/fo4/fo4_honeybadger_shell.mdl" --The effect used for shell ejection; Defaults to that used for blowback
+//SWEP.LuaShellModel  = "models/weapons/fo4/fo4_honeybadger_shell.mdl" --The effect used for shell ejection; Defaults to that used for blowback
 --Tracer Stuff
 SWEP.TracerName 		= nil 	--Change to a string of your tracer name.  Can be custom. There is a nice example at https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/effects/tooltracer.lua
 SWEP.TracerCount 		= 3 	--0 disables, otherwise, 1 in X chance
