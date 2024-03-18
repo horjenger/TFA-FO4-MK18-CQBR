@@ -7,7 +7,7 @@
 	"$blendtintbybasealpha" "1"
 	"$phongboost"	"20"
 	"$phongalbedotint"		"1"
-	"$phongfresnelranges"	"[0.75 0.9 1]"
+	"$phongfresnelranges"	"[0.8 0.9 1]"
 	"$rimlight"	"1"
 	"$rimlightexponent"		"25"
 	"$rimmask"	"1"
