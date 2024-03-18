@@ -10,9 +10,9 @@ ATTACHMENT.Description = {
 }
 
 ATTACHMENT.WeaponTable = {
-//        ["Bodygroups_V"] = {
-//        [3] =  2,
-//    },
+        ["Bodygroups_V"] = {
+        [2] =  2,
+    },
 	["VElements"] = {
 		["sight_holosun"] = {
 			["active"] = true
