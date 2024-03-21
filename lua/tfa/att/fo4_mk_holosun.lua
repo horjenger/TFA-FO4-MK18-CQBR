@@ -4,7 +4,7 @@ end
 
 ATTACHMENT.Name = "Holosun sight"
 ATTACHMENT.ShortName = "HOLOSUN"
-ATTACHMENT.Icon = "entities/fo4_hb_holosun.png"
+ATTACHMENT.Icon = "entities/tfa_qmark.png"
 ATTACHMENT.Description = {
 
 }
